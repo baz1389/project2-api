@@ -1,6 +1,11 @@
 class WordsController < OpenReadController
   def index
-    render json: Word.all
+    if current_user
+      @words = current_user.words
+    else
+      @words = Word.all
+    end
+    render json: @words
   end
 
   def show
