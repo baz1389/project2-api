@@ -1,21 +1,8 @@
 class WordsController < OpenReadController
 
-  # def index
-  #   if params[:word] then
-  #     @word = Word.where(word: params[:word])
-  #       elsif params[:name] then
-  #         @word = Word.where(name: params[:name])
-  #       else
-  #         @word = Word.all
-  #       end
-  #     end
-  #   end
-  #   render json: @words
-  # end
-
   def index
-    if current_user
-      @words = current_user.words
+    if params[:name]
+      @words = Word.where(name: params[:name])
     else
       @words = Word.all
     end
