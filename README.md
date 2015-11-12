@@ -1,6 +1,6 @@
 #Melcher Wordbook
 
-For the front-end repository and a description of this single-page application (SPA) please click [here](https://github.com/baz1389/Project-2-front-end)
+For the **front-end** repository and a description of this single-page application (SPA) please click [here](https://github.com/baz1389/Project-2-front-end)
 
 
 Below are some curl commands used for testing purposes:
